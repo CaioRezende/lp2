@@ -60,6 +60,19 @@ public class Lista{
 }
 
 	public String Inserir(String x){
-			
+		No novo = new No();
+		if(Lista = null){		
+		novo.setX(x);
+		setComeco(novo);
+		setUltimo(novo);
+		}else{
+		novo.setX(x);		
+		fim.setProx(novo);		
+		fim = novo;
+		}
 	}
+	
+	
+	
+	
 }

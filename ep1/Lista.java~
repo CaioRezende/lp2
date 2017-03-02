@@ -46,4 +46,20 @@ public class Lista{
 	public String getFim(){
 		return fim;	
 	}
+	
+	public bool Pesquisar(String x){
+	No y = getComeco;
+	while(y == null){ 	
+		if(x == y){
+			return true;
+		}else{
+		x = x.getProx();		
+		}
+	}
+	return false;	
+}
+
+	public String Inserir(String x){
+			
+	}
 }
