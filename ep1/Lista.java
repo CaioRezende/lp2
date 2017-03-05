@@ -47,10 +47,11 @@ public class Lista{
 		return fim;	
 	}
 	
-	public bool Pesquisar(String x){
-	No y = getComeco;
-	while(y == null){ 	
-		if(x == y){
+	public boolean Pesquisar(String x){
+	No y = getComeco();
+	while(y != null){ 	
+		if(x.equals(y.getX())){
+			//if(x == y), comparação de objetos em java
 			return true;
 		}else{
 		x = x.getProx();		
@@ -72,7 +73,13 @@ public class Lista{
 		}
 	}
 	
-	
-	
+	public String Remover(String x){
+		No a = getComeco();
+		while(a != null){
+			if(x.equals(a.getX())){
+				Lista.remove(a);
+			}
+		}
+	}
 	
 }
