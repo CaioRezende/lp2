@@ -1,67 +1,31 @@
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.lang.Comparable;
+	
+	public class Aluno implements Comparable<Aluno>{
 
-public class Aluno{
-	private String nome;
-	private int idade;
+	String nome;
+	int idade;
 	
-	public void setNome(){
-		this.nome = nome;	
-	}
-	
+	public Aluno(String nome, int idade){
+		this.nome = nome;
+		this.idade = idade;
+	}	
+		
 	public String getNome(){
 		return this.nome;	
 	}
-	
-	public void setIdade(){
-		this.idade = idade;	
-	}
-	
+		
 	public int getIdade(){
 		return this.idade;	
+	}		
+		
+		public int compareTo(Aluno outro){
+		if(this.idade < outro.getIdade()){
+			return 1;
+		}
+		else if(this.idade > outro.getIdade()){
+			return -1;
+		}
+		else{
+			return 0;
 	}
-	
-	public Aluno{
-		private int idade;
-		public int compareTo(Aluno aluno2) {
-        if (this.idade < aluno2.idade) {
-            return -1;
-        }
-        if (this.idade > aluno2.idade) {
-            return 1;
-        }
-        return 0;
-    }
-    public int compareTo2(Aluno aluno3) {
-        if (this.idade < aluno3.idade) {
-            return -1;
-        }
-        if (this.idade > aluno3.idade) {
-            return 1;
-        }
-        return 0;
-    }
-	public int compareTo3(Aluno aluno4) {
-        if (this.idade < aluno4.idade) {
-            return -1;
-        }
-        if (this.idade > aluno4.idade) {
-            return 1;
-        }
-        return 0;
-    }
-	public int compareTo(Aluno aluno5) {
-        if (this.idade < aluno5.idade) {
-            return -1;
-        }
-        if (this.idade > aluno5.idade) {
-            return 1;
-        }
-        return 0;
-    }
  }
-    
-    Collections.sort(lista);
-
 }
