@@ -10,11 +10,11 @@ Class Circunferencia extends FiguraGeometrica(){
 		return raio;
 	}
 	
-	public double PCirculo(){
+	public double Pcirculo(){
 		return (3,14*2*getRaio());
 	}
 	
-	public double ACirculo(){
+	public double Acirculo(){
 		return (3,14*getRaio()*getRaio());
 	}
 }
