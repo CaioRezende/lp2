@@ -3,8 +3,10 @@ public class Nota{
 	Aluno aluno1;
 	Disciplina d;	
 	
-	public void setValor(double valor){
-		this.valor = valor;	
+	public Nota(double valor, Aluno aluno1, Disciplina d){
+		this.valor = valor;
+		this.aluno1 = aluno1;
+		this.d = d; 
 	}
 	
 	public double getValor(){
@@ -15,13 +17,16 @@ public class Nota{
 		return this.aluno1;	
 	}
 	
-	public void setDisciplina1(Disciplina d1){
-		this.disciplina1 = disciplina1;	
-	}
-	public Disciplina getDisciplina1(){
+	public Disciplina getD1(){
 		return this.disciplina1;
-}
-
-
+	}
+	public int compareTo(Nota nota1){
+		if(this.valor < nota1.getValor())
+			return 1;
+		else if(this.valor > nota1.getValor())
+			return -1;
+		else
+			return 0;
+	}
 
 }
