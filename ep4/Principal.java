@@ -39,7 +39,7 @@ public class Principal{
             }
             
     int x = 0;
-            System.out.println("\nMaior nota de Matemática: ");
+            System.out.println("Maior nota de Matemática: ");
             while(x < 4){
                 if(notas.get(x).getDisciplina().getNome() != mat.getNome()){
                     x++;
@@ -57,7 +57,7 @@ public class Principal{
             }
             
      int y = 0;
-            System.out.println("\nMaior nota de Português: ");
+            System.out.println("Maior nota de Português: ");
             while(y < 4){
                 if(notas.get(y).getDisciplina().getNome() != port.getNome()){
                     y++;
