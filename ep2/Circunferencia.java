@@ -1,15 +1,20 @@
-Class Circunferencia(String raio){
-	Int perimetro, area;
-	setPerimetro(){
-		this.perimetro = 2*3,14*getRaio();
-}
-	getPerimetro(){
-		return this.perimetro;
-}
-	setArea(int raio)
-		this.area = (3,14*(get.Raio()*get.Raio()));
-}
-	getArea(){
-		return this.area;
-}
+Class Circunferencia extends FiguraGeometrica(){
+	
+	private double raio;
+		
+	public void setRaio(double raio){
+		this.raio = raio;
+	}
+	
+	public double getRaio(){
+		return raio;
+	}
+	
+	public double PCirculo(){
+		return (3,14*2*getRaio());
+	}
+	
+	public double ACirculo(){
+		return (3,14*getRaio()*getRaio());
+	}
 }
