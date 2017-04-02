@@ -1,14 +1,23 @@
 Class Quadrado(){
-	Int perimetro, área;
-	setPerimetro(){
-		this.perimetro = 4*getLado();
-}
-	getPerimetro(){
-		return this.perimetro;
-}
-	setArea(int lado)
-		this.area = Math.pow(getLado(), 2);
-}
-	getArea(){
-		return this.area;
+	
+	private double lado;
+
+	public void setL(double lado){
+		this.lado=lado;
+	}
+	
+	public double getL(){
+		return lado;
+	}	
+	
+	
+	public double Pquadrado(){
+		return getL()*4;
+	}
+	
+	public double Aquadrado(){
+		return getL()*getL();
+	}
+		
+			
 }
