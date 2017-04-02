@@ -1,4 +1,5 @@
 public class Nota{
+	
 	double valor;
 	Aluno aluno1;
 	Disciplina d;	
