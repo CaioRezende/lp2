@@ -29,6 +29,7 @@ class No{
 }
 
 public class Lista{
+	int i = 0;
 	private No comeco, fim;
 	
 	public void setComeco(No comeco){
@@ -50,8 +51,7 @@ public class Lista{
 	public boolean Pesquisar(String x){
 	No y = getComeco();
 	while(y != null){ 	
-		if(x.equals(y.getX())){
-			//if(x == y), comparação de objetos em java
+		if(x == y.getX())){
 			return true;
 		}else{
 		x = x.getProx();		
@@ -62,24 +62,36 @@ public class Lista{
 
 	public String Inserir(String x){
 		No novo = new No();
-		if(Lista = null){		
-		novo.setX(x);
-		setComeco(novo);
-		setUltimo(novo);
+		y.setX(x);
+		if(x == 0){		
+			this.comeco = y;
+			this.fim = y;
+			setComeco(y);
+			setUltimo(y);
 		}else{
-		novo.setX(x);		
-		fim.setProx(novo);		
-		fim = novo;
+		fim.setProx(y);
+		y.setAnt(fim);
+		fim = y;
+		fim.setProx(fim)
 		}
+		i++;
 	}
 	
-	public String Remover(String x){
+	public void Remover(){
 		No a = getComeco();
 		while(a != null){
-			if(x.equals(a.getX())){
+			if(Comeco.getX() == a.getX()){
 				Lista.remove(a);
 			}
-		}
 	}
+	
+	public void Exibir(){                   
+		No a = getComeco();
+		while (a != fim){
+			System.out.println(a.getX());
+			a = a.getProx();
+		}
+		System.out.println(fim.getX());
+	}	
 	
 }
