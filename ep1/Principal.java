@@ -1,28 +1,35 @@
-public static void main(String[] args){
-   Lista lista = new Lista();
-   String x = null;
-
-  while(int i != 9){
-    System.out.println("O que quer fazer?/n1 - Inserir/n2 - Remover/n3 - Pesquisar/n9 - Finalizar o programa");
-    //cin >> resposta;
-    if(resposta == "1"){
-      System.out.println("Informe o valor que deseja inserir");
-      //cin >> x;
-      lista.Inserir(x);     
-    }else if(resposta == "2"){
-      System.out.println("Informe o valor que deseja remover");
-      //cin >> x;
-      lista.Remover(x);
-    }else if(resposta == "3"){
-      System.out.println("Informe o valor que deseja pesquisar");
-      //cin >> x;
-      if(lista.Pesquisar(x) == true){
-        System.out.println("Valor existe na lista");
-      }else{
-        System.out.println("Valor não existe na lista");
-      }
-    }else{
-       System.out.println("Escolha inválida");
-    }
-  }
+public class Principal{
+   public static void main(String[] args){
+      Lista lista = new Lista();
+   
+      System.out.println("Inserir 1 2 3 4");
+    
+      lista.Inserir(1);
+	   lista.Inserir(2);
+	   lista.Inserir(3);
+	   lista.Inserir(4);
+   
+      System.out.println("Tamanho da lista: " + lista.i);
+		
+		lista.Exibir();
+		
+		if(lista.Procurar(4) == true){
+			System.out.println("Número existente");
+		}
+		
+		System.out.println("Remover o ultimo numero da lista, 4");
+		
+		lista.Remover();
+		
+		System.out.println("Tamanho da lista: "+ lista.i);
+		
+		System.out.println("Insira o número 5");
+      
+		lista.Inserir(5);
+      
+		lista.Exibir();
+		
+		System.out.println("Tamanho da lista: " + lista.i);
+		
+	}
 }
