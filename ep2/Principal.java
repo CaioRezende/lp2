@@ -33,10 +33,12 @@ public class Principal{
 			System.out.println(“Área: ” + Circulo1.Acirculo());
 		}
 		if(figura.getOpcao == 5){
-			Trapezio.setPerimetro(7, 5, 5);
-			Trapezio.setArea(7, 5, 5);
-			System.out.println(“Perímetro: ” + getPerimetro());
-			System.out.println(“Área: ” + getArea());		
+			Trapezio Trapezio1 = new Trapezio();
+			Trapezio.setMenor(5);
+			Trapezio.setMaior(7);
+			Trapezio.setAltura(5);
+			System.out.println(“Perímetro: ” + Ptrapezio());
+			System.out.println(“Área: ” + Atrapezio());		
 		}
 	}
 }
