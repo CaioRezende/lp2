@@ -1,16 +1,32 @@
-Class Trapezio(){
-	Int perimetro, area;
-	setPerimetro(){
-		int basetriangulo = ((get.Basemaior – get.Basemenor) / 2);
-		int hipotenusa = Math.pow(Math.pow(basetriangulo, 2) + Math.pow(get.Altura, 2), 1/2);
-this.perimetro = get.Basemaior + get.Basemenor + (hipotenusa*2);
-}
-	getPerimetro(){
-		return this.perimetro;
-}
-	setArea(){
-		this.area = (((get.Basemaior + get.Basemenor)/2)*get.Altura);
-}
-	getArea(){
-		return this.area;
+public class Trapezio extends FiguraGeometrica(){
+	
+	private double Menor, Maior, altura;
+
+	public void setMenor(double Menor){
+		this.Menor=Menor;
+	}
+
+	public void setMaior(double Maior){
+		this.Maior=Maior;
+	}
+	
+	public void setAltura(double altura){
+		this.altura=altura;
+	}
+	
+	public double getMenor(){
+		return Menor;
+		}	
+		
+	public double getMaior(){
+		return Maior;
+		}
+	
+	public double getAltura(){
+		return altura;
+		}			
+	
+	public double Atrapezio(){
+		return ((getMaior()+getMenor())*getAltura())/2);
+		}			
 }
